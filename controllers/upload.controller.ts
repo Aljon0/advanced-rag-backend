@@ -1,15 +1,15 @@
 // backend/controllers/upload.controller.ts
 
 import { Request, Response, NextFunction } from "express";
-import { validatePdfFile, extractTextFromPdf } from "../services/pdf.service";
-import { chunkExtractedPages, getChunkingStats } from "../services/chunking.service";
-import { embedChunks, getEmbeddingStats } from "../services/embedding.service";
+import { validatePdfFile, extractTextFromPdf } from "../services/pdf.service.js";
+import { chunkExtractedPages, getChunkingStats } from "../services/chunking.service.js";
+import { embedChunks, getEmbeddingStats } from "../services/embedding.service.js";
 import {
   createDocument,
   saveChunks,
   updateDocumentStatus,
-} from "../services/vector.service";
-import { AppError } from "../middleware/errorHandler";
+} from "../services/vector.service.js";
+import { AppError } from "../middleware/errorHandler.js";
 
 // ─── Upload + Process PDF ─────────────────────────────────────────────────────
 // POST /documents/upload

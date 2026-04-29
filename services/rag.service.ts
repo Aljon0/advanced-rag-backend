@@ -1,8 +1,8 @@
 // backend/services/rag.service.ts
 
-import { generateChatCompletion } from "../utils/mistral";
-import { hybridSearch, SearchResult } from "./search.service";
-import { AppError } from "../middleware/errorHandler";
+import { generateChatCompletion } from "../utils/mistral.js";
+import { hybridSearch, SearchResult } from "./search.service.js";
+import { AppError } from "../middleware/errorHandler.js";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

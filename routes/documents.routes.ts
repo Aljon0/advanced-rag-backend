@@ -2,12 +2,12 @@
 
 import { Router } from "express";
 import multer from "multer";
-import { uploadDocument } from "../controllers/upload.controller";
+import { uploadDocument } from "../controllers/upload.controller.js";
 import {
   getDocuments,
   getDocument,
   removeDocument,
-} from "../controllers/documents.controller";
+} from "../controllers/documents.controller.js";
 
 const router = Router();
 

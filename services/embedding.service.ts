@@ -1,8 +1,8 @@
 // backend/services/embedding.service.ts
 
-import { generateEmbeddings } from "../utils/mistral";
-import { TextChunk } from "./chunking.service";
-import { AppError } from "../middleware/errorHandler";
+import { generateEmbeddings } from "../utils/mistral.js";
+import { TextChunk } from "./chunking.service.js";
+import { AppError } from "../middleware/errorHandler.js";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 export interface EmbeddedChunk {

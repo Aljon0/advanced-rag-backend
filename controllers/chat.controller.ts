@@ -1,8 +1,8 @@
 // backend/controllers/chat.controller.ts
 
 import { Request, Response, NextFunction } from "express";
-import { ragAnswer } from "../services/rag.service";
-import { AppError } from "../middleware/errorHandler";
+import { ragAnswer } from "../services/rag.service.js";
+import { AppError } from "../middleware/errorHandler.js";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 // Matches exactly: src/types/api.ts → AskQuestionRequest

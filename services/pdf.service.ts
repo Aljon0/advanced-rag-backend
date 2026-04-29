@@ -1,7 +1,7 @@
 // backend/services/pdf.service.ts
 
 import { PDFParse } from "pdf-parse";
-import { AppError } from "../middleware/errorHandler";
+import { AppError } from "../middleware/errorHandler.js";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 export interface ExtractedPage {

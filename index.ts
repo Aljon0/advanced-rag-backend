@@ -4,10 +4,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import helmet from "helmet";
-import { errorHandler } from "./middleware/errorHandler";
-import chatRoutes from "./routes/chat.routes";
-import documentRoutes from "./routes/documents.routes";
-import dashboardRoutes from "./routes/dashboard.routes";
+import { errorHandler } from "./middleware/errorHandler.js";
+import chatRoutes from "./routes/chat.routes.js";
+import documentRoutes from "./routes/documents.routes.js";
+import dashboardRoutes from "./routes/dashboard.routes.js";
 
 dotenv.config();
 

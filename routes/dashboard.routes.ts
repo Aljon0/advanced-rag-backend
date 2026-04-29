@@ -1,7 +1,7 @@
 // backend/routes/dashboard.routes.ts
 
 import { Router } from "express";
-import { getDashboard } from "../controllers/documents.controller";
+import { getDashboard } from "../controllers/documents.controller.js";
 
 const router = Router();
 

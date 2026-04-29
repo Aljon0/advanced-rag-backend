@@ -1,13 +1,13 @@
 // backend/controllers/documents.controller.ts
 
 import { NextFunction, Request, Response } from "express";
-import { AppError } from "../middleware/errorHandler";
+import { AppError } from "../middleware/errorHandler.js";
 import {
   deleteDocument,
   getAllDocuments,
   getDashboardStats,
   getDocumentById,
-} from "../services/vector.service";
+} from "../services/vector.service.js";
 
 function getSingleParamValue(
   value: string | string[] | undefined,

@@ -1,8 +1,8 @@
 // backend/services/vector.service.ts
 
-import supabase, { DbDocument, DbDocumentChunk } from "../utils/supabase";
-import { EmbeddedChunk } from "./embedding.service";
-import { AppError } from "../middleware/errorHandler";
+import supabase, { DbDocument, DbDocumentChunk } from "../utils/supabase.js";
+import { EmbeddedChunk } from "./embedding.service.js";
+import { AppError } from "../middleware/errorHandler.js";
 
 export interface CreateDocumentInput {
   name: string;

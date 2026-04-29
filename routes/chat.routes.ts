@@ -1,7 +1,7 @@
 // backend/routes/chat.routes.ts
 
 import { Router } from "express";
-import { askQuestion } from "../controllers/chat.controller";
+import { askQuestion } from "../controllers/chat.controller.js";
 
 const router = Router();
 

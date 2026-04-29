@@ -1,14 +1,14 @@
 // backend/services/search.service.ts
 
-import { generateEmbedding } from "../utils/mistral";
+import { generateEmbedding } from "../utils/mistral.js";
 import {
   semanticSearch,
   keywordSearch,
   getDocumentById,
   VectorSearchResult,
-} from "./vector.service";
-import { DbDocumentChunk } from "../utils/supabase";
-import { AppError } from "../middleware/errorHandler";
+} from "./vector.service.js";
+import { DbDocumentChunk } from "../utils/supabase.js";
+import { AppError } from "../middleware/errorHandler.js";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 export interface SearchResult {

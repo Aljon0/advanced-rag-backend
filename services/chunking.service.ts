@@ -1,6 +1,6 @@
 // backend/services/chunking.service.ts
 
-import { ExtractedPage } from "./pdf.service";
+import { ExtractedPage } from "./pdf.service.js";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 export interface TextChunk {
