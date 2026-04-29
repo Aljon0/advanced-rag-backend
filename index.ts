@@ -18,7 +18,14 @@ const PORT = process.env.PORT || 3001;
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin: (origin, callback) => {
+      const allowed = process.env.FRONTEND_URL || "http://localhost:3000";
+      if (!origin || origin === allowed) {
+        callback(null, true);
+      } else {
+        callback(new Error(`CORS blocked: ${origin}`));
+      }
+    },
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
